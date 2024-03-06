@@ -1,6 +1,5 @@
-# Comentario de linea 1
-# Comentario de linea 2
-
-"""Comentario de varias lineas
-se aplican las comillas al iniciar y 
-las 3 mismas comillas al finalizar"""
+# Comentario 1
+# Comentario 2
+"""Comentario Multilinea"""
+num1 = 10
+num2 = 5
