@@ -8,7 +8,8 @@ print(10 - 5)
 print(5 * 5)
 print(20 / 5)
 
-# Esto es un comentario
+#esto
+# Esto es un comentarioS
 """
 Comentario de
 varias
