@@ -1,4 +1,5 @@
 user_option = input("piedra\npapel\ntijera\nElija una opción: ")
+user_option = user_option.lower()
 cpu_option = "papel"
 
 if user_option == cpu_option:
