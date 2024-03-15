@@ -1,6 +1,12 @@
+import random
+
 user_option = input("piedra\npapel\ntijera\nElija una opción: ")
 user_option = user_option.lower()
-cpu_option = "papel"
+options = ("piedra", "papel", "tijera")
+cpu_option = random.choice(options)
+
+print("Opción del Usuario ->", user_option)
+print("Opción del Computador ->", cpu_option)
 
 if user_option == cpu_option:
     print("Empate")
