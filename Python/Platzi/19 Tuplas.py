@@ -22,6 +22,7 @@ print(type(lista))
 lista[1] = "Pedro"
 print(lista)
 
+#Tuple() --> Convierte una lista a una tupla
 tupla = tuple(lista)
 print(tupla)
 print(type(tupla))
