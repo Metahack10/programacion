@@ -12,6 +12,10 @@ for line in file:
 
 file.close()
 
-with open('D:/Development/programacion/Python/Platzi/Funciones y Errores/text.txt') as file:
+#Metodos de escritura o modificacion para archivos
+with open('D:/Development/programacion/Python/Platzi/Funciones y Errores/text.txt', 'w+') as file: #'r+' --> indica que abra el archivo con permisos de escritura y lectura, agregando el contenido a la ultima linea, mientras que w+ reemplaza el contenido en el archivo
     for line in file:
         print(line)
+    file.write('nuevas cosas en este archivo\n')
+    file.write("otra linea\n")
+    file.write("mas linea")
