@@ -1,0 +1,1 @@
+print("mi primer programa desde la pc")
