@@ -11,7 +11,7 @@ python3 main.py
 
 Para ejecutar el proyecto debes seguir las siguientes instrucciones en la terminal:
 
-'''
+'''sh
 git clone
 cd charts
 python -m venv env

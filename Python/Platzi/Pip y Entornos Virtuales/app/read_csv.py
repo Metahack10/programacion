@@ -1,6 +1,4 @@
 import csv
-import utils
-import matplotlib.pyplot as plt
 
 def read_csv(path):
     with open(path, "r") as csvfile:
@@ -14,14 +12,8 @@ def read_csv(path):
             data.append(country_dict)
         return data
 
-def generate_bar_chart(labels, values):
-    fig, ax = plt.subplots()
-    ax.bar(labels, values)
-    plt.show()
+if __name__ == '__main__':
+    data = read_csv('Python/Platzi/Pip y Entornos Virtuales/app/data.csv')
+    print(data[0])
 
-def generate_pie_chart(labels,values):
-    fig, ax = plt.subplots()
-    ax.pie(values, labels=labels)
-    ax.axis("equal")
-    plt.show()
 
