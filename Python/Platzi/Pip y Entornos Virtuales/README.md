@@ -11,11 +11,11 @@ python3 main.py
 
 Para ejecutar el proyecto debes seguir las siguientes instrucciones en la terminal:
 
-'''sh
+```sh
 git clone
 cd charts
 python -m venv env
 .\env\Scripts\activate
 pip3 install -r requirements.txt
 python3 main.py
-'''
+```
