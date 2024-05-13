@@ -1,10 +1,11 @@
-FROM python:3.8
+FROM python:3.9
 
 WORKDIR /app
-COPY "Python/Platzi/Pip y Entornos Virtuales/app/requirements.txt" '/app/requirements.txt'
+COPY requirements.txt /app/requirements.txt
 
-RUN pip install --no-cache-dir --upgrade -r /app/requirements.txt
+RUN pip install --upgrade pip
+RUN pip install -r /app/requirements.txt
 
-COPY . /app/
+COPY . /app
 
 CMD bash -c "while true; do sleep 1; done"
