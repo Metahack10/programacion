@@ -4,24 +4,22 @@ import charts
 import pandas as pd
 
 def run():
-    '''
     
+    '''
+    data = read_csv.read_csv('data.csv')
     data = list(filter(lambda item: item['Continent'] == 'South America', data))
 
     countries = list(map(lambda x: x['Country/Territory'], data))
     percentages = list(map(lambda x: x['World Population Percentage'], data))
     '''
-
-    df = pd.read_csv('Python/Platzi/Pip y Entornos Virtuales/app/data.csv')
+    df = pd.read_csv('data.csv')
     df = df[df['Continent'] == 'Africa']
     countries = df['Country/Territory'].values
     percentages = df['World Population Percentage'].values
+    data = read_csv.read_csv('data.csv')
 
-    data = read_csv.read_csv('Python/Platzi/Pip y Entornos Virtuales/app/data.csv')
     charts.generate_pie_chart(countries, percentages)
 
-    
-    #data = read_csv.read_csv('data.csv')
     country = input('Type Country => ')
     print(country)
 
