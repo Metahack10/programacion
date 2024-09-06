@@ -16,3 +16,16 @@ print(tasks)
 print(numbers[:3]) #Imprime los 3 primeros elementos de la lista del 0 al 2 
 print(True in types) #Devuelve True si existe el elemento indicado en la lista
 print("hola" in types)
+
+#! Slicing
+a = ["a", "b", "c", "d", "e"]
+b = a
+del(a[0])
+print(a)
+print(b)
+print(id(a))
+print(id(b))
+c = a[:]
+c.append("a")
+print(a)
+print(c)
