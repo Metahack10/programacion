@@ -1,3 +1,6 @@
+
+#?Errores de Sintaxis --> Sintax Errors
+#? Errores de tipos --> Type Errors
 try:
     print(0 / 0)
 
