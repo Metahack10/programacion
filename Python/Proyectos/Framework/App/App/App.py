@@ -4,8 +4,13 @@ class State(rx.State):
     pass
 
 def index() -> rx.Component:
-    return rx.text("Hola Reflex!", color="blue")
+    return rx.hstack(
+        rx.text("Metahack",
+                height="40px"
+                ),
+                position="sticky"
+    )
 
 app = rx.App()
 app.add_page(index)
-#app.compile()
+#app_compile()
