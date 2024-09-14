@@ -2,7 +2,7 @@ import reflex as rx
 from enum import Enum
 
 #? Constantes
-MAX_WIDTH = "600px"
+MAX_WIDTH = "560px"
 
 #* Sizes
 class Size(Enum):
