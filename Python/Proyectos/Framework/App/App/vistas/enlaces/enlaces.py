@@ -1,8 +1,10 @@
 import reflex as rx
 from App.componentes.link_button import link_button
+from App.componentes.title import title
 
 def enlaces() -> rx.Component:
     return rx.vstack(
+        title("Redes Sociales"),
         link_button("Twitch", 
                     "@mouredev", 
                     "https://twitch.tv/mouredev"),

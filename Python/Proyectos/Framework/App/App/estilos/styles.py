@@ -2,7 +2,7 @@ import reflex as rx
 from enum import Enum
 
 #? Constantes
-MAX_WIDTH = "560px"
+MAX_WIDTH = "700px"
 
 #* Sizes
 class Size(Enum):
@@ -32,4 +32,9 @@ button_title_style = dict(
 
 button_body_style = dict(
     font_size = Size.MEDIUM.value
+)
+
+title_style = dict(
+    width = "100%",
+    padding_top = Size.DEFAULT.value
 )
