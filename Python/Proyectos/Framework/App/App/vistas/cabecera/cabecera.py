@@ -46,5 +46,5 @@ def cabecera() -> rx.Component:
                 cuento con más de 10 años de experiencia especializada en auditoría de sistemas 
                 y seguridad de la información, con un enfoque particular en el sector bancario y financiero."""),
         align_items = "start",
-        spacing = Size.BIG.value
+        spacing = "6"
     )

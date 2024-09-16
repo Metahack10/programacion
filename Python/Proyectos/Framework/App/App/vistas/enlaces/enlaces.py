@@ -17,5 +17,6 @@ def enlaces() -> rx.Component:
         link_button("Twitter", 
                     "@Metahack", 
                     "https://x.com/Jlopez_life"),
-        width="100%"
+        width="100%",
+        spacing = "4"
 )
