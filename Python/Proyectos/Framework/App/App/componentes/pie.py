@@ -2,6 +2,7 @@ import reflex as rx
 import datetime
 from App.estilos.styles import Size as Size
 import App.estilos.styles as styles
+from App.estilos.colors import TextColor as TextColor
 
 def pie() -> rx.Component:
     return rx.center(
@@ -21,6 +22,7 @@ def pie() -> rx.Component:
                 align = "center",
                 max_width=styles.MAX_WIDTH,
                 width="100%",
-                margin_y=Size.BIG.value
+                margin_y=Size.BIG.value,
+                color = TextColor.FOOTER.value
             )
         )
