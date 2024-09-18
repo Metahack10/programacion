@@ -39,13 +39,14 @@ def cabecera() -> rx.Component:
                         color = Color.ROL.value
                 ),
                 rx.flex(
-                    link_icon("https://www.linkedin.com/in/jorge-lopez-vicente/", "Linkedin"),
+                    link_icon("https://www.linkedin.com/in/jorge-lopez-vicente/", "linkedin.png"),
                     rx.spacer(),
-                    link_icon("https://github.com/Metahack10", "Github"),
+                    link_icon("https://github.com/Metahack10", "Github3(1).png"),
                     rx.spacer(),
-                    link_icon("https://www.youtube.com/@JorgeLopez-br4mt", "Youtube"),
-                    width = "80%",
-                    align = "center"
+                    link_icon("https://www.youtube.com/@JorgeLopez-br4mt", "youtube.png"),
+                    rx.spacer(),
+                    link_icon("mail to:pkflopez@gmail.com", "email.png"),
+                    width = "70%"
                 )
             ),
             align = "center",

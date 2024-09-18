@@ -29,5 +29,10 @@ def index() -> rx.Component:
 app = rx.App(
     style = styles.BASE_STYLE
 )
-app.add_page(index)
+app.add_page(
+    index,
+    title = "Metahack | Especialista en Ciberseguridad",
+    description = "Hola, mi nombre es Jorge Lopez alias Metahack. Soy Ingeniero Informático especialista en Ciberseguridad y hacking ético.",
+    image = "./Left Arrown.ico"
+)
 #app.compile()

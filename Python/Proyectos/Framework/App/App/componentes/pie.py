@@ -7,7 +7,10 @@ from App.estilos.colors import TextColor as TextColor
 def pie() -> rx.Component:
     return rx.center(
             rx.vstack(
-                rx.image(src="favicon.ico"),
+                rx.image(
+                    src="favicon.ico",
+                    height = Size.VERY_BIG
+                ),
                 rx.link("© Metahack",
                         href="https://github.com/Metahack10",
                         is_external=True,

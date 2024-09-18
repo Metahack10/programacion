@@ -15,6 +15,7 @@ class Size(Enum):
     SLARGE = "1.2em"
     LARGE = "1.5em"
     BIG = "2em"
+    VERY_BIG = "4em"
 
 #! Styles
 BASE_STYLE = {
