@@ -3,6 +3,7 @@ from App.componentes.link_icon import link_icon
 from App.estilos.styles import Size as Size
 from App.estilos.colors import TextColor as TextColor
 from App.estilos.colors import Color as Color
+import App.estilos.styles as styles
 
 def cabecera() -> rx.Component:
     return rx.vstack(
@@ -24,11 +25,12 @@ def cabecera() -> rx.Component:
                             weight = "medium",
                             color = Color.TITULO.value
                     ),
-                    rx.heading("<Metahack>", 
+                    rx.heading("(Metahack)", 
                             size = "7",
                             weight = "light",
                             margin_top = "20px",
-                            color = Color.ALIAS.value
+                            color = Color.ALIAS.value,
+                            style = styles.alias_style
                     ),
                     padding_top = "5px"
                 ),
@@ -51,12 +53,6 @@ def cabecera() -> rx.Component:
             ),
             align = "center",
             align_items = "start"
-        ),
-        rx.text("""Soy ingeniero Informático especialista en Ciberseguridad, 
-                cuento con más de 10 años de experiencia especializada en auditoría de sistemas 
-                y seguridad de la información, con un enfoque particular en el sector bancario y financiero.""",
-                color = TextColor.BODY.value,
-                size = "5"
         ),
         align_items = "start",
         spacing = "6"
