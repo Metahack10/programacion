@@ -23,7 +23,10 @@ def index() -> rx.Component:
                 max_width=styles.MAX_WIDTH,
                 width="100%",
                 margin_y=Size.BIG.value,
-                padding = Size.BIG.value
+                padding = Size.BIG.value,
+                bg = "rgba(8, 20, 45, 0.8)",
+                border_radius = "15px",
+                box_shadow = "0px 4px 15px 20px rgba(36, 41, 68, 0.3)"
             )
         ),
         pie()

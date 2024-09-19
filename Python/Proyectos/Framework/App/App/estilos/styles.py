@@ -6,7 +6,7 @@ from .fonts import Font as Font
 
 #? Constantes
 MAX_WIDTH = "740px"
-bg_svg = "bg_contelacion2.svg"
+bg_svg = "bg_constelacion2.svg"
 
 #* Sizes
 class Size(Enum):
@@ -24,8 +24,9 @@ BASE_STYLE = {
     #"background_color": Color.BACKGROUND.value,
     "background_color": "#330033",
     "background_image": f"url({bg_svg})",
-    #"background-size": "cover",
+    #"background_size": "cover",
     #"background-position": "center",
+    #"opacity": "0.6",
     #"background-repeat": "no-repeat",
     #"height": "100vh",
     "font_family": Font.DEFAULT.value,
@@ -93,5 +94,15 @@ navbar_title_style = dict(
 )
 
 alias_style = dict(
-    text_shadow = "0 0 2px #fff, 0 0 7px #fff, 0 0 10px #ff00ff, 0 0 10px #ff00ff, 0 0 15px #ff00ff, 0 0 20px #ff00ff, 0 0 20px #ff00ff"
+    animation="neon 2s infinite"
+    #text_shadow="0 0 2px #fff, 0 0 7px #fff, 0 0 10px #ff00ff, 0 0 10px #ff00ff, 0 0 15px #ff00ff, 0 0 20px #ff00ff, 0 0 20px #ff00ff"
 )
+
+keyframes = {
+    "@keyframes neon": {
+        "0%": {"text_shadow": "0 0 2px #fff, 0 0 7px #fff, 0 0 10px #ff00ff, 0 0 10px #ff00ff, 0 0 15px #ff00ff, 0 0 20px #ff00ff"},
+        "50%": {"text_shadow": "0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff00ff, 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 50px #ff00ff"},
+        "100%": {"text_shadow": "0 0 2px #fff, 0 0 7px #fff, 0 0 10px #ff00ff, 0 0 10px #ff00ff, 0 0 15px #ff00ff, 0 0 20px #ff00ff"}
+    }
+}
+
