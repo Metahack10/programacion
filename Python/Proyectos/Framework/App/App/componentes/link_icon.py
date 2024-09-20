@@ -9,5 +9,15 @@ def link_icon(url: str, image: str) -> rx.Component:
             height = Size.BIG.value
         ),
         href = url,
-        is_external = True
+        is_external = True,
+    )
+
+def link_cert(url: str, image: str) -> rx.Component:
+    return rx.link(
+        rx.image(
+            src = image,
+            height = Size.VERY_BIG.value
+        ),
+        href = url,
+        is_external = True,
     )

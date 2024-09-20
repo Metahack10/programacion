@@ -30,7 +30,8 @@ def cabecera() -> rx.Component:
                             weight = "light",
                             margin_top = "20px",
                             color = Color.ALIAS.value,
-                            style = styles.alias_style
+                            #style = styles.alias_style
+                            class_name = "neon-text"
                     ),
                     padding_top = "5px"
                 ),

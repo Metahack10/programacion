@@ -4,7 +4,7 @@ from App.estilos.colors import TextColor as TextColor
 
 def aboutme() -> rx.Component:
     return rx.vstack(
-        title("Sobre mí"),
+        title("👨‍💻Sobre mí"),
         rx.text("""Soy ingeniero Informático especialista en Ciberseguridad, 
                 cuento con más de 10 años de experiencia especializada en auditoría de sistemas 
                 y seguridad de la información, con un enfoque particular en el sector bancario y financiero.""",

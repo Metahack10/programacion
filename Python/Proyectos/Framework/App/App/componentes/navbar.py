@@ -15,5 +15,8 @@ def navbar() -> rx.Component:
         padding_x = Size.DEFAULT.value,
         padding_y = Size.SMALL.value,
         z_index="999",
-        top = "0"
+        top = "0",
+        style=dict(
+            box_shadow="0px 4px 10px rgba(0, 0, 0, 0.5)"
+        )
     )

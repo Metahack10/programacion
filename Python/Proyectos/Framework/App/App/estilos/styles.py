@@ -18,6 +18,7 @@ class Size(Enum):
     LARGE = "1.5em"
     BIG = "2em"
     VERY_BIG = "4em"
+    EXTRA_BIG = "6em"
 
 #! Styles
 BASE_STYLE = {
@@ -93,16 +94,4 @@ navbar_title_style = dict(
     font_size = Size.LARGE.value
 )
 
-alias_style = dict(
-    animation="neon 2s infinite"
-    #text_shadow="0 0 2px #fff, 0 0 7px #fff, 0 0 10px #ff00ff, 0 0 10px #ff00ff, 0 0 15px #ff00ff, 0 0 20px #ff00ff, 0 0 20px #ff00ff"
-)
-
-keyframes = {
-    "@keyframes neon": {
-        "0%": {"text_shadow": "0 0 2px #fff, 0 0 7px #fff, 0 0 10px #ff00ff, 0 0 10px #ff00ff, 0 0 15px #ff00ff, 0 0 20px #ff00ff"},
-        "50%": {"text_shadow": "0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff00ff, 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 50px #ff00ff"},
-        "100%": {"text_shadow": "0 0 2px #fff, 0 0 7px #fff, 0 0 10px #ff00ff, 0 0 10px #ff00ff, 0 0 15px #ff00ff, 0 0 20px #ff00ff"}
-    }
-}
 

@@ -1,7 +1,7 @@
 import reflex as rx
 from App.componentes.navbar import navbar
 from App.vistas.cabecera.cabecera import cabecera
-from App.vistas.enlaces.enlaces import enlaces
+from App.vistas.enlaces.certificaciones import certificaciones
 from App.vistas.About.aboutme import aboutme
 from App.vistas.Experiencia.experiencia import experiencia
 from App.componentes.pie import pie
@@ -19,7 +19,7 @@ def index() -> rx.Component:
                 cabecera(),
                 aboutme(),
                 experiencia(),
-                enlaces(),
+                certificaciones(),
                 max_width=styles.MAX_WIDTH,
                 width="100%",
                 margin_y=Size.BIG.value,
@@ -32,10 +32,13 @@ def index() -> rx.Component:
         pie()
     )
 
-
 app = rx.App(
-    style = styles.BASE_STYLE
+    style = styles.BASE_STYLE,
+    stylesheets=[
+        "/styles.css"
+    ]
 )
+
 app.add_page(
     index,
     title = "Metahack | Especialista en Ciberseguridad",
