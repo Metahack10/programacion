@@ -34,3 +34,32 @@
             0 0 40px #ff00ff;
     }
 }
+
+.certificaciones {
+    /*border: 1px solid rgb(36,41,56);
+    background-image: linear-gradient(to right top, #242938, #242938, #33364b, #3b3d55);*/
+    background-color: #242938;
+    box-shadow: 0 5px 20px rgb(58, 58, 58);
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.certificaciones:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3), 0 0 15px rgba(255, 255, 255, 0.4);
+}
+
+.img {
+    border: none;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    clip-path: inset(7%);
+}

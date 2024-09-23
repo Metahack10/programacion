@@ -1,6 +1,7 @@
 import reflex as rx
 import App.estilos.styles as styles
 from App.estilos.styles import Size as Size
+from App.estilos.colors import Color as Color
 
 def link_icon(url: str, image: str) -> rx.Component:
     return rx.link(
@@ -12,12 +13,22 @@ def link_icon(url: str, image: str) -> rx.Component:
         is_external = True,
     )
 
-def link_cert(url: str, image: str) -> rx.Component:
+def link_cert(titulo: str, url: str, image: str) -> rx.Component:
     return rx.link(
+        rx.heading(
+                titulo,
+                size = "2",
+                color = Color.TITULO.value,
+                align = "center"
+        ),
         rx.image(
             src = image,
-            height = Size.VERY_BIG.value
+            height = "5em",
+            width = Size.EXTRA_BIG.value,
+            padding = "5px",
+            class_name = "img"
         ),
+        class_name = "certificaciones",
         href = url,
-        is_external = True,
+        is_external = True
     )

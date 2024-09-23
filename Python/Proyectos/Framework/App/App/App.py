@@ -20,6 +20,8 @@ def index() -> rx.Component:
                 aboutme(),
                 experiencia(),
                 certificaciones(),
+                #proyectos(),
+                #habilidades(),
                 max_width=styles.MAX_WIDTH,
                 width="100%",
                 margin_y=Size.BIG.value,
