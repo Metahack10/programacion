@@ -65,11 +65,70 @@
     clip-path: inset(7%);
 }
 
-.skill {
-    border: none;
-    padding: 0;
-    margin: 0;
-    background-color: transparent;
-    clip-path: inset(7%);
-    gap: 10px;
+/*Contenedor del carrusel*/
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 10px;
+    background: transparent;
+}
+
+/*Carrusel que contiene las imagenes*/
+.carousel {
+    display: flex;
+    animation: scroll 10s linear infinite;
+}
+
+/*Estilo de las imagenes*/
+.carousel img {
+    height: 200px;
+    margin-right: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    box-shadow: 0 5px 20px rgb(255, 255, 255);
+}
+
+/* Tooltip ->muestra el nombre de la imagen */
+.tooltip {
+    display: none;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+/*Efecto al pasar el raton sobre la imagen*/
+.carousel img:hover {
+    animation-play-state: paused;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+}
+
+/* Mostrar el tooltip cuando se pasa el mouse sobre la imagen */
+.carousel img:hover + .tooltip {
+    display: block;                    /* Muestra el nombre de la imagen */
+}
+
+/*Animación para desplazar las imagenes a la izquierda*/
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/*Efecto de carrusel circular*/
+.carousel::after {
+    content: '';
+    display: block;
 }

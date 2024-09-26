@@ -26,20 +26,12 @@ from App.estilos.colors import Color as Color
 #         width="100%"
 #     )
 
-def skill_icon(titulo: str, image: str) -> rx.Component:
-    return rx.vstack(
-        rx.heading(
-                titulo,
-                size = "2",
-                color = Color.TITULO.value,
-                align = "center"
-        ),
-        rx.image(
+def skill_icon(image: str) -> rx.Component:
+    return rx.image(
             src = image,
             height = "5em",
             width = "5.7em",
             padding = "5px",
-            class_name = "skill"
-        ),
-        class_name = "habilidades"
+            class_name = "carousel img"
     )
+        
