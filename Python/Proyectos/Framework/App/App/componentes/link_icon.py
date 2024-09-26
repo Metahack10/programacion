@@ -24,7 +24,7 @@ def link_cert(titulo: str, url: str, image: str) -> rx.Component:
         rx.image(
             src = image,
             height = "5em",
-            width = Size.EXTRA_BIG.value,
+            width = "5.7em",
             padding = "5px",
             class_name = "img"
         ),

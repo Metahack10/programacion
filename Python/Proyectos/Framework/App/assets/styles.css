@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:wght@300;500&display=swap&https://fonts.googleapis.com/css?family=Prompt:wght@500&display=swap&https://fonts.googleapis.com/css?family=Fira Code:wght@700&display=swap");
 .neon-text {
     color: #ff00ff;
     font-weight: bold;
@@ -62,4 +63,13 @@
     margin: 0;
     background-color: transparent;
     clip-path: inset(7%);
+}
+
+.skill {
+    border: none;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    clip-path: inset(7%);
+    gap: 10px;
 }

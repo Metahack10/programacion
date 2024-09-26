@@ -4,7 +4,7 @@ from App.componentes.title import title
 
 def certificaciones() -> rx.Component:
     return rx.vstack(
-        title("🏅Certificaciones Internacionales"),
+        title("Certificaciones Internacionales"),
         rx.vstack(
             rx.flex(
                 link_cert("MCRTA","https://cyberwarfare.live/product/multi-cloud-red-team-analyst-mcrta/", "MCRTA1.png"),
@@ -17,8 +17,6 @@ def certificaciones() -> rx.Component:
                 rx.spacer(),
                 link_cert("Comptia Sec+","https://www.comptia.org/es/certificaciones/security", "ComptiaSec+1.png"),
                 width = "100%",
-                #gap = "10px",
-                #display = "flex",
                 align_items = "center",
                 justify_content = "center"
             ),
@@ -33,11 +31,10 @@ def certificaciones() -> rx.Component:
                 rx.spacer(),
                 link_cert("CSPO","https://www.scrumalliance.org/get-certified/product-owner-track/certified-scrum-product-owner", "CSPO1.png"),
                 width = "100%",
-                gap = "10px",
-                #display = "flex",
                 align_items = "center",
                 justify_content = "center",
-                margin_top = "10px"
+                margin_top = "10px",
+                gap = "10px"
             )
         ),
         align_items = "start",

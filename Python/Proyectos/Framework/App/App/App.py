@@ -4,6 +4,7 @@ from App.vistas.cabecera.cabecera import cabecera
 from App.vistas.enlaces.certificaciones import certificaciones
 from App.vistas.About.aboutme import aboutme
 from App.vistas.Experiencia.experiencia import experiencia
+from App.vistas.habilidades.skills import habilidades
 from App.componentes.pie import pie
 from App.estilos.styles import Size as Size
 import App.estilos.styles as styles
@@ -21,7 +22,7 @@ def index() -> rx.Component:
                 experiencia(),
                 certificaciones(),
                 #proyectos(),
-                #habilidades(),
+                habilidades(),
                 max_width=styles.MAX_WIDTH,
                 width="100%",
                 margin_y=Size.BIG.value,

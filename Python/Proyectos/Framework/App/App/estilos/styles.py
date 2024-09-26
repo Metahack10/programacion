@@ -3,9 +3,10 @@ from enum import Enum
 from .colors import Color as Color
 from .colors import TextColor as TextColor
 from .fonts import Font as Font
+from .fonts import FontWeight as FWeight
 
 #? Constantes
-MAX_WIDTH = "740px"
+MAX_WIDTH = "800px"
 bg_svg = "bg_constelacion2.svg"
 
 #* Sizes
@@ -23,15 +24,10 @@ class Size(Enum):
 
 #! Styles
 BASE_STYLE = {
-    #"background_color": Color.BACKGROUND.value,
     "background_color": "#330033",
     "background_image": f"url({bg_svg})",
-    #"background_size": "cover",
-    #"background-position": "center",
-    #"opacity": "0.6",
-    #"background-repeat": "no-repeat",
-    #"height": "100vh",
     "font_family": Font.DEFAULT.value,
+    "font_weight": FWeight.LIGHT,
     rx.button: {
         "width": "100%",
         "height": "100%",
@@ -54,31 +50,33 @@ BASE_STYLE = {
 button_title_style = dict(
     font_size = Size.SLARGE.value,
     color = TextColor.HEADER.value,
-    font_family = Font.TITLE.value
+    font_family = Font.TITLE.value,
+    font_weight = FWeight.MEDIUM
 )
 
 button_body_style = dict(
     font_size = Size.DEFAULT.value,
     color = TextColor.BODY.value,
-    font_family = Font.DEFAULT.value
+    font_family = Font.DEFAULT.value,
+    font_weight = FWeight.LIGHT
 )
 
 text_title_style = dict(
-    font_size = Size.SLARGE.value,
     color = TextColor.HEADER.value,
-    font_family = Font.TITLE.value
+    font_family = Font.TITLE.value,
+    font_weight = FWeight.BIG
 )
 
 text_subtitle_style = dict(
-    font_size = Size.MEDIUM.value,
     color = TextColor.BODY.value,
-    font_family = Font.DEFAULT.value
+    font_family = Font.TITLE.value,
+    font_weight = FWeight.LIGHT
 )
 
 text_body_style = dict(
-    font_size = Size.SDEFAULT.value,
     color = TextColor.BODY.value,
-    font_family = Font.DEFAULT.value
+    font_family = Font.DEFAULT.value,
+    font_weight = FWeight.LIGHT
 )
 
 
@@ -87,12 +85,14 @@ title_style = dict(
     width = "100%",
     padding_top = Size.DEFAULT.value,
     color = TextColor.HEADER.value,
-    font_family = Font.TITLE.value
+    font_family = Font.TITLE.value,
+    font_weight = FWeight.BIG
 )
 
 navbar_title_style = dict(
     font_family = Font.LOGO.value,
-    font_size = Size.LARGE.value
+    font_size = Size.LARGE.value,
+    font_weight = FWeight.BIG
 )
 
 

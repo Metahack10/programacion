@@ -11,35 +11,44 @@ def cabecera() -> rx.Component:
             rx.avatar(
                 src="./perfil.png", 
                 fallback="JL", 
-                size="8", 
+                size="9", 
                 radius="full",
                 color = TextColor.BODY.value,
                 bg = Color.BORDE.value,
                 padding = "3px",
-                border = "6px"
+                border = "6px",
+                margin_top = "10px"
             ),
             rx.vstack(
                 rx.hstack(
                     rx.heading("JORGE LOPEZ", 
                             size = "9",
                             weight = "medium",
-                            color = Color.TITULO.value
+                            color = Color.TITULO.value,
+                            style = styles.title_style,
+                            margin_top = "10px",
+                            padding = "5px",
+                            white_space = "nowrap"
                     ),
                     rx.heading("(Metahack)", 
                             size = "7",
                             weight = "light",
-                            margin_top = "20px",
+                            margin_top = "10px",
                             color = Color.ALIAS.value,
-                            #style = styles.alias_style
-                            class_name = "neon-text"
+                            class_name = "neon-text",
+                            style = styles.title_style
                     ),
                     padding_top = "5px"
                 ),
                 rx.heading("CYBERSECURITY SPECIALIST", 
                         size = "8",
                         weight = "regular",
-                        padding_top = "10px",
-                        color = Color.ROL.value
+                        padding_left = "5px",
+                        padding_top = "5px",
+                        padding_button = "3px",
+                        color = Color.ROL.value,
+                        style = styles.title_style,
+                        margin_top = "0px"
                 ),
                 rx.flex(
                     link_icon("https://www.linkedin.com/in/jorge-lopez-vicente/", "linkedin.png"),
@@ -49,7 +58,8 @@ def cabecera() -> rx.Component:
                     link_icon("https://www.youtube.com/@JorgeLopez-br4mt", "youtube.png"),
                     rx.spacer(),
                     link_icon("mail to:pkflopez@gmail.com", "email.png"),
-                    width = "70%"
+                    width = "70%",
+                    padding_left = "5px"
                 )
             ),
             align = "center",

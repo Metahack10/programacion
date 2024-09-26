@@ -4,6 +4,6 @@ import App.estilos.styles as styles
 def title(text: str) -> rx.Component:
     return rx.heading(
         text,
-        size = "6",
+        font_size = "6",
         style = styles.title_style
     )
