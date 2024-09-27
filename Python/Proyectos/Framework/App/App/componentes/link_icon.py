@@ -13,7 +13,11 @@ def link_icon(url: str, image: str) -> rx.Component:
         is_external = True,
     )
 
-def link_cert(titulo: str, url: str, image: str) -> rx.Component:
+def link_cert(titulo: str, url: str, image: str, descripcion: str) -> rx.Component:
+    if image == "Certi/ISO27032.png":
+        clase = "img2"
+    else:
+        clase = "img"
     return rx.link(
         rx.heading(
                 titulo,
@@ -23,10 +27,9 @@ def link_cert(titulo: str, url: str, image: str) -> rx.Component:
         ),
         rx.image(
             src = image,
-            height = "5em",
-            width = "5.7em",
+            title = descripcion,
             padding = "5px",
-            class_name = "img"
+            class_name = clase
         ),
         class_name = "certificaciones",
         href = url,
