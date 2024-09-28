@@ -51,13 +51,13 @@ def cabecera() -> rx.Component:
                         margin_top = "0px"
                 ),
                 rx.flex(
-                    link_icon("https://www.linkedin.com/in/jorge-lopez-vicente/", "linkedin.png"),
+                    link_icon("https://www.linkedin.com/in/jorge-lopez-vicente/", "Rsociales/linkedin.png"),
                     rx.spacer(),
-                    link_icon("https://github.com/Metahack10", "Github3(1).png"),
+                    link_icon("https://github.com/Metahack10", "Rsociales/Github.png"),
                     rx.spacer(),
-                    link_icon("https://www.youtube.com/@JorgeLopez-br4mt", "youtube.png"),
+                    link_icon("https://www.youtube.com/@JorgeLopez-br4mt", "Rsociales/youtube.png"),
                     rx.spacer(),
-                    link_icon("mail to:pkflopez@gmail.com", "email.png"),
+                    link_icon("mail to:pkflopez@gmail.com", "Rsociales/email.png"),
                     width = "70%",
                     padding_left = "5px"
                 )
