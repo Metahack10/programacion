@@ -10,6 +10,14 @@ def navbar() -> rx.Component:
             rx.text.strong("hack", as_ = "span", color = Color.SECONDARY.value),
             style = styles.navbar_title_style
         ),
+        rx.flex(
+            rx.text("Sobre mí", class_name = "nav_boton"),
+            rx.text("Experiencia", class_name = "nav_boton"),
+            rx.text("Certificaciones", class_name = "nav_boton"),
+            rx.text("Habilidades", class_name = "nav_boton"),
+            rx.text("Aportes", class_name = "nav_boton"),
+            rx.text("Mi Curriculum", class_name = "nav_boton")
+        ),
         position="sticky",
         bg = Color.Nav.value,
         padding_x = Size.DEFAULT.value,
