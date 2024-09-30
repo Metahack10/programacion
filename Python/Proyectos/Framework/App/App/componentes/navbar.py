@@ -11,12 +11,13 @@ def navbar() -> rx.Component:
             style = styles.navbar_title_style
         ),
         rx.flex(
-            rx.text("Sobre mí", class_name = "nav_boton"),
-            rx.text("Experiencia", class_name = "nav_boton"),
-            rx.text("Certificaciones", class_name = "nav_boton"),
-            rx.text("Habilidades", class_name = "nav_boton"),
+            rx.link(rx.text("Sobre mí", class_name = "nav_boton"), href = "#Sobre_mi"),
+            rx.link(rx.text("Experiencia", class_name = "nav_boton"), href = "#Experiencia"),
+            rx.link(rx.text("Certificaciones", class_name = "nav_boton"), href = "#Certificaciones"),
+            rx.link(rx.text("Habilidades", class_name = "nav_boton"), href = "#habilidades"),
             rx.text("Aportes", class_name = "nav_boton"),
-            rx.text("Mi Curriculum", class_name = "nav_boton")
+            rx.text("Mi Curriculum", class_name = "nav_boton"),
+            class_name="nav_menu"
         ),
         position="sticky",
         bg = Color.Nav.value,

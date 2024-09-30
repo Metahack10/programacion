@@ -60,5 +60,6 @@ def habilidades() -> rx.Component:
         ),
         align_items = "start",
         spacing = "4",
-        class_name = "carrusel"
+        class_name = "carrusel",
+        id = "habilidades"
 )

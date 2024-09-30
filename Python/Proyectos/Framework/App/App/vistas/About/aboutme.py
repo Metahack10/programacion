@@ -13,5 +13,6 @@ def aboutme() -> rx.Component:
                 style = styles.text_body_style
         ),
         align_items = "start",
-        spacing = "4"
+        spacing = "4",
+        id = "Sobre_mi"
     )

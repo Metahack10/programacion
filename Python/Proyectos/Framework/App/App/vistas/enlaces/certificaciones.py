@@ -38,5 +38,6 @@ def certificaciones() -> rx.Component:
             )
         ),
         align_items = "start",
-        spacing = "4"
+        spacing = "4",
+        id = "Certificaciones"
 )
