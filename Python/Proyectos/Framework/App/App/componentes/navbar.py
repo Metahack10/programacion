@@ -17,14 +17,17 @@ def navbar() -> rx.Component:
             rx.link(rx.text("Habilidades", class_name = "nav_boton"), href = "#habilidades"),
             rx.text("Aportes", class_name = "nav_boton"),
             rx.link(
-                rx.image(
-                    src = "resume.png",
-                    height = Size.BIG.value
+                rx.hstack(
+                    rx.image(
+                        src = "resume.png",
+                        height = Size.LARGE.value,
+                        margin_left = "15px"
+                    ),
+                    rx.text("Mi Curriculum", class_name = "nav_boton", margin_left = "-3px")
                 ),
-                rx.text("Mi Curriculum", class_name = "nav_boton"),
                 is_external = True,
-                href = "Cv/resume.pdf",
-                margin = "0 10px"
+                href = "Cv/resume.pdf"
+                #margin = "0 10px"
             ),
             class_name="nav_menu"
         ),

@@ -9,7 +9,6 @@ class Color(Enum):
     TITULO = "#fffefb"
     ALIAS = "#ff94d8"
     ROL = "#58dcd8"
-    #Nav = "#292f4c"
     Nav = "rgba(10, 16, 32, 0.9)"
 
 class TextColor(Enum):

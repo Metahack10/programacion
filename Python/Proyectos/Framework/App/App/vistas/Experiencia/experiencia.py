@@ -1,7 +1,5 @@
 import reflex as rx
 from App.componentes.title import title as title
-from App.estilos.styles import Size as Size
-import App.estilos.styles as styles
 from App.componentes.expe import expe
 
 def experiencia() -> rx.Component:
