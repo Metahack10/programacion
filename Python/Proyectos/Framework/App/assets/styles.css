@@ -170,9 +170,7 @@ html {
 /* Bento Grip */
 .container{
     background-color: white;
-    width: 750px;
-    height: 700px;
-    padding: 1em;
+    height: 500px;
     display: flex;
     gap: 1em;
 }
@@ -190,14 +188,54 @@ html {
     flex-direction: column;
     gap: 1em;
 }
-.col3{
+/*.col3{
     flex: 2.5;
     border: 2px solid darkgray;
     border-radius: 2em;
     background-color: darkcyan;
     align-content: center;
     text-align: center;
+}*/
+
+.col3{
+    flex: 2.5;
+    background-color: #333;
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Sombra para darle un efecto 3D */
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
 }
+
+.col3::before{
+    content: '';
+    width: 100%;
+    height: 20px;
+    background-color: #666;
+    position: absolute;
+    top: -20px;
+    left: 0;
+    border-radius: 10px 10px 0 0;
+}
+
+.col3 laptop{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Para que la imagen se ajuste a la pantalla */
+}
+
+.col3 linklap{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    position: relative;
+}
+
+col3 linklap:hover laptop {
+    filter: brightness(0.8);
+}
+
 .row{
     border: 2px solid darkgray;
     border-radius: 2em;
@@ -213,11 +251,11 @@ html {
     background-color: hotpink;
 }
 .up2{
-    flex: 1.5;
+    flex: 1.3;
     background-color: bisque;
 }
 .down2{
-    flex: 0.5;
+    flex: 0.7;
     background-color: lightskyblue;
 }
 h1{
