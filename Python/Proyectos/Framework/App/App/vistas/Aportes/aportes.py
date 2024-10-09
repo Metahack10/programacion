@@ -128,24 +128,8 @@ def aportes() -> rx.Component:
                         size = "6",
                         class_name = "titulo"
                     ),
-                    rx.box(
-                        rx.box(
-                            rx.box(
-                                class_name = "header"
-                            ),
-                            rx.box(
-                                rx.image(
-                                    src = "cve-2323-38831.jpg",
-                                    class_name = "img_rar"
-                                ),
-                                class_name = "contenido"
-                            ),
-                            class_name = "screen"
-                        ),
-                        rx.box(
-                            class_name = "keyboard"
-                        ),
-                        class_name = "laptop"
+                    rx.image(
+                        src = "logros/poc.png"
                     )
                 ),   
                 href = "https://www.youtube.com/watch?v=LFzNChhzqns&t=6s",
