@@ -15,7 +15,7 @@ def navbar() -> rx.Component:
             rx.link(rx.text("Experiencia", class_name = "nav_boton"), href = "#Experiencia"),
             rx.link(rx.text("Certificaciones", class_name = "nav_boton"), href = "#Certificaciones"),
             rx.link(rx.text("Habilidades", class_name = "nav_boton"), href = "#habilidades"),
-            rx.text("Aportes", class_name = "nav_boton"),
+            rx.link(rx.text("Aportes", class_name = "nav_boton"), href = "#Aportes"),
             rx.link(
                 rx.hstack(
                     rx.image(

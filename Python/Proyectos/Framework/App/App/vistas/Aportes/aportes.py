@@ -9,27 +9,39 @@ def aportes() -> rx.Component:
         title("Aportes & Logros"),
         rx.box(
             rx.box(
-                rx.box(
+                rx.link(
                     rx.heading(
                         "Wpinger en Powershell",
                         size = "2",
                         class_name = "titulo2"
                     ),
+                    rx.image(
+                        src = "logros/wpinger.svg",
+                        class_name = "img_grid"
+                    ),
+                    href = "https://github.com/Metahack10/my_vault/tree/master/Powershell",
+                    is_external = True,
                     class_name = "row up",
                 ),
-                rx.box(
+                rx.link(
                     rx.heading(
                         "Pinger en Bash",
                         size = "2",
                         class_name = "titulo2"
                     ),
+                    rx.image(
+                        src = "logros/pinger.svg",
+                        class_name = "img_grid"
+                    ),
+                    href = "https://github.com/Metahack10/my_vault/tree/master/Bash",
+                    is_external = True,
                     class_name = "row down"
                 ),
                 class_name = "col1",
                 width = "100%"
             ),
             rx.box(
-                rx.box(
+                rx.link(
                     rx.heading(
                         "TryHackMe Profile",
                         size = "3",
@@ -108,29 +120,36 @@ def aportes() -> rx.Component:
                         font_size = Size.SMEDIUM.value,
                         text_align = "start"
                     ),
+                    khref = "https://tryhackme.com/r/p/metahack10",
+                    is_external = True,
                     class_name = "row up2"
                 ),
-                rx.box(
+                rx.link(
                     rx.heading(
                         "HackBar",
                         size = "1",
                         class_name = "titulo2"
                     ),
+                    rx.image(
+                        src = "logros/hackbar.svg",
+                        class_name = "img_grid"
+                    ),
+                    href = "https://github.com/Metahack10/hack_statusbar",
+                    is_external = True,
                     class_name = "row down2"
                 ),
                 class_name = "col2",
                 width = "100%"
             ),
             rx.link(
-                rx.box(
-                    rx.heading(
-                        "POC WinRar CVE-2323-38831",
-                        size = "6",
-                        class_name = "titulo"
-                    ),
-                    rx.image(
-                        src = "logros/poc.png"
-                    )
+                rx.heading(
+                    "POC WinRar CVE-2323-38831",
+                    size = "6",
+                    class_name = "titulo"
+                ),
+                rx.image(
+                    src = "logros/poc.png",
+                    class_name = "img_poc"
                 ),   
                 href = "https://www.youtube.com/watch?v=LFzNChhzqns&t=6s",
                 class_name = "row col3",

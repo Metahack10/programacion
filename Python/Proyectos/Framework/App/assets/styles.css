@@ -39,7 +39,7 @@
 .certificaciones {
     border: 1px solid rgb(37,36,36);
     background-image: linear-gradient(to right top, #111112, #161618, #1b1b1e, #1f1f24, #24242a);
-    box-shadow: 0 10px 20px rgb(58, 58, 58);
+    box-shadow: 0 10px 20px rgba(161, 155, 155, 0.2);
     padding: 10px;
     margin: 10px;
     display: flex;
@@ -170,7 +170,7 @@ html {
 /* Bento Grip */
 .container{
     /*background-color: white;*/
-    height: 450px;
+    height: 465px;
     display: flex;
     gap: 1em;
 }
@@ -195,7 +195,7 @@ html {
     flex: 2.3;
 }
 
-/* Efecto de card neon */
+/* Efecto de card cristalino */
 .row{
     position: relative;
     border-radius: 1rem;
@@ -210,19 +210,9 @@ html {
     background: linear-gradient(to top right, rgb(7 16 45), rgb(58 60 84));
     background: -webkit-linear-gradient(to top right, rgb(7 16 45), rgb(58 60 84));
     border: 1px solid rgb(84 90 106);
+    justify-content: center;
 }
-.row::after{
-    content: '';
-    background-color: none;
-    position: absolute;
-    z-index: 1;
-    transition: 0.3s ease;
-    height: 98%;
-    width: 98%;
-    top: 1%;
-    left: 1%;
-    border-radius: 28px;
-}
+
 .row:hover{
     filter: drop-shadow(0px 0px 20px rgba(184, 217, 230,0.5));
     cursor: pointer;
@@ -230,25 +220,52 @@ html {
 
 .titulo {
     color: #fffefb;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
     margin-top: 5px;
     padding: 0 60px 0 60px;
 }
 
 .titulo2 {
     color: #fffefb;
-    padding: 5px;
+    padding: 0px;
+    margin: 0px;
 }
 
 .up{
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
 }
 .down{
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
 }
 .up2{
-    flex: 1.3;
+    flex: 1.2;
 }
 .down2{
-    flex: 0.7;
+    flex: 0.8;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+
+/*ajustes bento components*/
+.img_poc{
+    margin: -50px 0 0 0;
+    padding: 0 10px 0 0px;
+    height: 100%;
+    width: 100%;
+}
+.img_grid{
+    width: 100%;
+    height: 70%;
+    padding: -15px 2px 0 2px;
+    margin-top: -5px;
 }
