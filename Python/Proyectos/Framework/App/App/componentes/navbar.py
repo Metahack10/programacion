@@ -27,7 +27,6 @@ def navbar() -> rx.Component:
                 ),
                 is_external = True,
                 href = "Cv/resume.pdf"
-                #margin = "0 10px"
             ),
             class_name="nav_menu"
         ),

@@ -44,7 +44,7 @@ def aportes() -> rx.Component:
                     ),
                     rx.text(
                         "Next Rank - Level 13 [GOD]",
-                        font_size = Size.SMALL.value,
+                        font_size = Size.SMEDIUM.value,
                         text_align = "end",
                         padding = "0px 4px 0px 0px",
                         margin_bottom = "-10px"
@@ -72,7 +72,7 @@ def aportes() -> rx.Component:
                             radius = "small",
                             height = "5px"
                         ),
-                        font_size = Size.SMALL.value,
+                        font_size = Size.SMEDIUM.value,
                         text_align = "start",
                     ),
                     rx.text(
@@ -83,7 +83,7 @@ def aportes() -> rx.Component:
                             radius = "small",
                             height = "5px"
                         ),
-                        font_size = Size.SMALL.value,
+                        font_size = Size.SMEDIUM.value,
                         text_align = "start"
                     ),
                     rx.text(
@@ -94,7 +94,7 @@ def aportes() -> rx.Component:
                             radius = "small",
                             height = "5px"
                         ),
-                        font_size = Size.SMALL.value,
+                        font_size = Size.SMEDIUM.value,
                         text_align = "start"
                     ),
                     rx.text(
@@ -105,7 +105,7 @@ def aportes() -> rx.Component:
                             radius = "small",
                             height = "5px"
                         ),
-                        font_size = Size.SMALL.value,
+                        font_size = Size.SMEDIUM.value,
                         text_align = "start"
                     ),
                     class_name = "row up2"

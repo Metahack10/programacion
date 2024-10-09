@@ -12,6 +12,7 @@ bg_svg = "bg_constelacion2.svg"
 #* Sizes
 class Size(Enum):
     SMALL = "0.5em"
+    SMEDIUM = "0.6em"
     MEDIUM = "0.8em"
     SDEFAULT = "0.9em"
     DEFAULT = "1em"
