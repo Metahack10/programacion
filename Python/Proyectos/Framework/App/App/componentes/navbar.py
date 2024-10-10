@@ -4,17 +4,7 @@ from App.estilos.colors import Color as Color
 import App.estilos.styles as styles
 
 def center_scroll(element_id):
-    return f"""
-    var target = document.getElementById('{element_id}');
-    if (target) {{
-        var targetPosition = target.getBoundingClientRect().top + window.pageYOffset;
-        var offsetPosition = targetPosition - (window.innerHeight / 2) + (target.offsetHeight / 2);
-        window.scrollTo({{
-            top: offsetPosition,
-            behavior: 'smooth'
-        }});
-    }}
-    """
+    return rx.window.scroll_to(element_id, behavior="smooth", block="center")
 
 def navbar() -> rx.Component:
     return rx.hstack(
@@ -24,7 +14,7 @@ def navbar() -> rx.Component:
             style = styles.navbar_title_style
         ),
         rx.flex(
-            rx.link(rx.text("Sobre mí", class_name = "nav_boton"), href = "#Sobre_mi", on_click = center_scroll("Sobre mi")),
+            rx.link(rx.text(rx.script(src = "/js/scroll.js"), "Sobre mí", class_name = "nav_boton"), href = "#Sobre_mi"),
             rx.link(rx.text("Experiencia", class_name = "nav_boton"), href = "#Experiencia", on_click = center_scroll("Experiencia")),
             rx.link(rx.text("Certificaciones", class_name = "nav_boton"), href = "#Certificaciones", on_click = center_scroll("Certificaciones")),
             rx.link(rx.text("Habilidades", class_name = "nav_boton"), href = "#habilidades", on_click = center_scroll("habilidades")),
