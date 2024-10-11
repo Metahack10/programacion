@@ -78,47 +78,55 @@ def aportes() -> rx.Component:
                     ),
                     rx.text(
                         "Fundamentals",
-                        rx.progress(
-                            value = 100,
-                            width = "95%",
-                            radius = "small",
-                            height = "5px"
-                        ),
                         font_size = Size.SMEDIUM.value,
                         text_align = "start",
+                        padding = "0 3px 0 0",
+                        margin = "0 0 -12px 0"
+                    ),
+                    rx.progress(
+                        value = 100,
+                        width = "95%",
+                        radius = "small",
+                        height = "5px"
                     ),
                     rx.text(
                         "Network Explotation",
-                        rx.progress(
-                            value = 95,
-                            width = "95%",
-                            radius = "small",
-                            height = "5px"
-                        ),
                         font_size = Size.SMEDIUM.value,
-                        text_align = "start"
+                        text_align = "start",
+                        padding = "0 3px 0 0",
+                        margin = "0 0 -12px 0"
+                    ),
+                    rx.progress(
+                        value = 95,
+                        width = "95%",
+                        radius = "small",
+                        height = "5px"
                     ),
                     rx.text(
                         "Web Explotaition",
-                        rx.progress(
-                            value = 87,
-                            width = "95%",
-                            radius = "small",
-                            height = "5px"
-                        ),
                         font_size = Size.SMEDIUM.value,
-                        text_align = "start"
+                        text_align = "start",
+                        padding = "0 3px 0 0",
+                        margin = "0 0 -12px 0"
+                    ),
+                    rx.progress(
+                        value = 87,
+                        width = "95%",
+                        radius = "small",
+                        height = "5px"
                     ),
                     rx.text(
                         "Linux",
-                        rx.progress(
-                            value = 85,
-                            width = "95%",
-                            radius = "small",
-                            height = "5px"
-                        ),
                         font_size = Size.SMEDIUM.value,
-                        text_align = "start"
+                        text_align = "start",
+                        padding = "0 3px 0 0",
+                        margin = "0 0 -12px 0"
+                    ),
+                    rx.progress(
+                        value = 85,
+                        width = "95%",
+                        radius = "small",
+                        height = "5px"
                     ),
                     khref = "https://tryhackme.com/r/p/metahack10",
                     is_external = True,

@@ -170,7 +170,7 @@ html {
 /* Bento Grip */
 .container{
     /*background-color: white;*/
-    height: 465px;
+    height: 490px;
     display: flex;
     gap: 1em;
 }
