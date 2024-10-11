@@ -15,7 +15,7 @@ def certificaciones() -> rx.Component:
                 rx.spacer(),
                 link_cert("CEH","https://www.eccouncil.org/train-certify/certified-ethical-hacker-ceh/", "Certi/CEH.png", "Certified Ethical Hacker"),
                 rx.spacer(),
-                link_cert("Comptia Sec+","https://www.comptia.org/es/certificaciones/security", "Certi/ComptiaSec+.png", "Comptia Security"),
+                link_cert("Comptia Sec+","https://www.comptia.org/es/certificaciones/security", "Certi/Comptia.png", "Comptia Security"),
                 width = "100%",
                 align_items = "center",
                 justify_content = "center"
