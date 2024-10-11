@@ -168,9 +168,7 @@ html {
 }
 
 /* Bento Grip */
-.container{
-    /*background-color: white;*/
-    height: 490px;
+.container {
     display: flex;
     gap: 1em;
 }

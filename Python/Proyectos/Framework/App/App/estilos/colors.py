@@ -10,6 +10,7 @@ class Color(Enum):
     ALIAS = "#ff94d8"
     ROL = "#58dcd8"
     Nav = "rgba(10, 16, 32, 0.9)"
+    BODY = "#C3C7CB"
 
 class TextColor(Enum):
     HEADER = "#F1F2F4"

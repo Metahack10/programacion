@@ -51,6 +51,7 @@ def aportes() -> rx.Component:
                         "Level",
                         font_size = Size.DEFAULT.value,
                         text_align = "left",
+                        color = Color.TITULO.value,
                         margin = "-7px 0 -10px 0",
                         padding = "2px"
                     ),
@@ -58,6 +59,7 @@ def aportes() -> rx.Component:
                         "Next Rank - Level 13 [GOD]",
                         font_size = Size.SMEDIUM.value,
                         text_align = "end",
+                        color = Color.TITULO.value,
                         padding = "0px 4px 0px 0px",
                         margin_bottom = "-10px"
                     ),
@@ -73,6 +75,7 @@ def aportes() -> rx.Component:
                         "Skills",
                         font_size = Size.DEFAULT.value,
                         text_align = "left",
+                        color = Color.TITULO.value,
                         margin = "-7px 0 -10px 0",
                         padding = "2px"
                     ),
@@ -80,6 +83,7 @@ def aportes() -> rx.Component:
                         "Fundamentals",
                         font_size = Size.SMEDIUM.value,
                         text_align = "start",
+                        color = Color.TITULO.value,
                         padding = "0 3px 0 0",
                         margin = "0 0 -12px 0"
                     ),
@@ -93,6 +97,7 @@ def aportes() -> rx.Component:
                         "Network Explotation",
                         font_size = Size.SMEDIUM.value,
                         text_align = "start",
+                        color = Color.TITULO.value,
                         padding = "0 3px 0 0",
                         margin = "0 0 -12px 0"
                     ),
@@ -106,6 +111,7 @@ def aportes() -> rx.Component:
                         "Web Explotaition",
                         font_size = Size.SMEDIUM.value,
                         text_align = "start",
+                        color = Color.TITULO.value,
                         padding = "0 3px 0 0",
                         margin = "0 0 -12px 0"
                     ),
@@ -119,6 +125,7 @@ def aportes() -> rx.Component:
                         "Linux",
                         font_size = Size.SMEDIUM.value,
                         text_align = "start",
+                        color = Color.TITULO.value,
                         padding = "0 3px 0 0",
                         margin = "0 0 -12px 0"
                     ),
@@ -165,6 +172,7 @@ def aportes() -> rx.Component:
                 is_external = True
             ),
             class_name = "container",
+            height= "478px",
             width = "100%"
         ),
         width = "100%",
