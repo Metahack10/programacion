@@ -12,11 +12,11 @@ def navbar() -> rx.Component:
             style = styles.navbar_title_style
         ),
         rx.flex(
-            rx.text("Sobre mí", class_name = "nav_boton", on_click="scrollToSection('Sobre_mi')"),
-            rx.text("Experiencia", class_name = "nav_boton", on_click="scrollToSection('Experiencia')"),
-            rx.text("Certificaciones", class_name = "nav_boton", on_click="scrollToSection('Certificaciones')"),
-            rx.text("Habilidades", class_name = "nav_boton", on_click="scrollToSection('habilidades')"),
-            rx.text("Aportes", class_name = "nav_boton", on_click="scrollToSection('Aportes')"),
+            rx.text("Sobre mí", class_name = "nav_boton", id = "Sobre_mi_nav"),
+            rx.text("Experiencia", class_name = "nav_boton", id = "Experiencia_nav"),
+            rx.text("Certificaciones", class_name = "nav_boton", id = "Certificaciones_nav"),
+            rx.text("Habilidades", class_name = "nav_boton", id = "habilidades_nav"),
+            rx.text("Aportes", class_name = "nav_boton", id = "Aportes_nav"),
             rx.link(
                 rx.hstack(
                     rx.image(
