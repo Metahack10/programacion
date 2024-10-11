@@ -16,6 +16,9 @@ class State(rx.State):
 def index() -> rx.Component:
     return rx.box(
         navbar(),
+        rx.script(
+            src = "/scroll.js",
+        ),
         rx.center(
             rx.vstack(
                 cabecera(),
