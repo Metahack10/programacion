@@ -23,7 +23,7 @@ def habilidades() -> rx.Component:
                 rx.spacer(),
                 skill_icon("skill/THM.png", "TryHackMe"),
                 rx.spacer(),
-                skill_icon("skill/Vscode.svg", "Visual Studio Code"),
+                skill_icon("skill/vscode.png", "Visual Studio Code"),
                 rx.spacer(),
                 skill_icon("skill/Github.png", "GitHub"),
                 rx.spacer(),
