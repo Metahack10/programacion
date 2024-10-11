@@ -1,3 +1,5 @@
+console.log("scroll.js is loaded");
+
 document.addEventListener('DOMContentLoaded', function() {
     function scrollToSection(sectionId) {
         console.log("Scrolling to section: " + sectionId);  // Depuración
