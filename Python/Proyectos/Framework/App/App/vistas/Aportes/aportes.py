@@ -135,7 +135,7 @@ def aportes() -> rx.Component:
                         radius = "small",
                         height = "5px"
                     ),
-                    khref = "https://tryhackme.com/r/p/metahack10",
+                    href = "https://tryhackme.com/r/p/metahack10",
                     is_external = True,
                     class_name = "row up2"
                 ),

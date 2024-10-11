@@ -3,10 +3,11 @@ import App.estilos.styles as styles
 from App.estilos.styles import Size as Size
 from App.estilos.colors import Color as Color
 
-def link_icon(url: str, image: str) -> rx.Component:
+def link_icon(url: str, image: str, titulo: str) -> rx.Component:
     return rx.link(
         rx.image(
             src = image,
+            title = titulo,
             height = Size.BIG.value
         ),
         href = url,
