@@ -39,5 +39,6 @@ def navbar() -> rx.Component:
         top = "0",
         style=dict(
             box_shadow="0px 4px 10px rgba(0, 0, 0, 0.5)"
-        )
+        ),
+        class_name = "navbar"
     )
