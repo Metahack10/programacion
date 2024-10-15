@@ -6,7 +6,7 @@ from App.estilos.colors import Color as Color
 import App.estilos.styles as styles
 
 def cabecera() -> rx.Component:
-    return rx.vstack(
+    return rx.flex(
         rx.hstack(
             rx.avatar(
                 src="./perfil.png", 
@@ -66,5 +66,6 @@ def cabecera() -> rx.Component:
             align_items = "start"
         ),
         align_items = "start",
-        spacing = "6"
+        spacing = "6",
+        width = "100%"
     )
