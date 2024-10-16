@@ -8,7 +8,6 @@ def certificaciones() -> rx.Component:
         rx.vstack(
             rx.flex(
                 link_cert("MCRTA","https://cyberwarfare.live/product/multi-cloud-red-team-analyst-mcrta/", "Certi/MCRTA.png", "Multi Cloud Red Team Analyst"),
-                #rx.spacer(),
                 link_cert("eCPPT","https://security.ine.com/certifications/ecppt-certification/", "Certi/eCPPT.png", "elearn Certified Professional Penetration Tester"),
                 link_cert("eJPT","https://security.ine.com/certifications/ejpt-certification/", "Certi/eJPT.png", "elearn Junior Penetration Tester"),
                 link_cert("CEH","https://www.eccouncil.org/train-certify/certified-ethical-hacker-ceh/", "Certi/CEH.png", "Certified Ethical Hacker"),
