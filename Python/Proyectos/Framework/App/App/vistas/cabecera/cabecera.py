@@ -9,10 +9,10 @@ def cabecera() -> rx.Component:
     return rx.flex(
         rx.hstack(
             rx.avatar(
-                src="./perfil.png", 
-                fallback="JL", 
-                size="9", 
-                radius="full",
+                src = "./perfil.png", 
+                fallback = "JL", 
+                size = rx.breakpoints(initial = "5", sm = "7", lg = "9"), 
+                radius = "full",
                 color = TextColor.BODY.value,
                 bg = Color.BORDE.value,
                 padding = "3px",
@@ -20,9 +20,9 @@ def cabecera() -> rx.Component:
                 margin_top = "10px"
             ),
             rx.vstack(
-                rx.hstack(
+                rx.flex(
                     rx.heading("JORGE LOPEZ", 
-                            size = "9",
+                            size = rx.breakpoints(initial = "4", sm = "6", lg = "9"),
                             weight = "medium",
                             color = Color.TITULO.value,
                             style = styles.title_style,
@@ -31,7 +31,7 @@ def cabecera() -> rx.Component:
                             white_space = "nowrap"
                     ),
                     rx.heading("(Metahack)", 
-                            size = "7",
+                            size = rx.breakpoints(initial = "2", sm = "4", lg = "7"),
                             weight = "light",
                             margin_top = "10px",
                             color = Color.ALIAS.value,
@@ -41,7 +41,7 @@ def cabecera() -> rx.Component:
                     padding_top = "5px"
                 ),
                 rx.heading("CYBERSECURITY SPECIALIST", 
-                        size = "8",
+                        size = rx.breakpoints(initial = "3", sm = "5", lg = "8"),
                         weight = "regular",
                         padding_left = "5px",
                         padding_top = "5px",

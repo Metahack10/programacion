@@ -8,7 +8,8 @@ def link_icon(url: str, image: str, titulo: str) -> rx.Component:
         rx.image(
             src = image,
             title = titulo,
-            height = Size.BIG.value
+            height = rx.breakpoints(initial = Size.MEDIUM.value, sm = Size.LARGE.value, lg = Size.BIG.value),
+            width = "auto"
         ),
         href = url,
         is_external = True,
@@ -22,7 +23,7 @@ def link_cert(titulo: str, url: str, image: str, descripcion: str) -> rx.Compone
     return rx.link(
         rx.heading(
                 titulo,
-                size = "2",
+                size = rx.breakpoints(initial = "1", sm = "1", lg = "2"),
                 color = Color.TITULO.value,
                 align = "center"
         ),
@@ -30,7 +31,9 @@ def link_cert(titulo: str, url: str, image: str, descripcion: str) -> rx.Compone
             src = image,
             title = descripcion,
             padding = "5px",
-            class_name = clase
+            class_name = clase,
+            height = rx.breakpoints(initial = "40px", sm = "60px", lg = "80px"),
+            width = rx.breakpoints(initial = "40px", sm = "60px", lg = "80px")
         ),
         class_name = "certificaciones",
         href = url,
