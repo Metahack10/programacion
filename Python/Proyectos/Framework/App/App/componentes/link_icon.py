@@ -25,17 +25,25 @@ def link_cert(titulo: str, url: str, image: str, descripcion: str) -> rx.Compone
                 titulo,
                 size = rx.breakpoints(initial = "1", sm = "1", lg = "2"),
                 color = Color.TITULO.value,
-                align = "center"
+                align = "center",
+                #padding = "5px",
+                margin = "5px"
         ),
         rx.image(
             src = image,
             title = descripcion,
-            padding = "5px",
             class_name = clase,
             height = rx.breakpoints(initial = "40px", sm = "60px", lg = "80px"),
-            width = rx.breakpoints(initial = "40px", sm = "60px", lg = "80px")
+            width = rx.breakpoints(initial = "40px", sm = "60px", lg = "80px"),
+            background_color = "transparent",
+            border = "none",
+            clip_path = "inset(1%)"
         ),
         class_name = "certificaciones",
         href = url,
-        is_external = True
+        is_external = True,
+        padding_bottom = "10px",
+        padding_top = "10px",
+        padding_left = "5px",
+        padding_right = "5px"
     )

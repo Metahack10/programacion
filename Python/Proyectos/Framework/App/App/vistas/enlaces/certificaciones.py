@@ -1,6 +1,7 @@
 import reflex as rx
 from App.componentes.link_icon import link_cert
 from App.componentes.title import title
+from App.estilos.styles import Size as Size
 
 def certificaciones() -> rx.Component:
     return rx.vstack(
@@ -20,21 +21,13 @@ def certificaciones() -> rx.Component:
                 width = "100%",
                 align = "start",
                 justify = "start",
-                wrap = "wrap"
+                wrap = "wrap",
+                flex_direction = "row",
+                gap = "23px"
                 
             )
-            # rx.flex(
-                
-            #     width = "100%",
-            #     align = "start",
-            #     justify = "center",
-            #     #align_items = "center",
-            #     #justify_content = "center",
-            #     margin_top = "10px",
-            #     wrap = "wrap"
-            # )
         ),
         align_items = "start",
-        spacing = "4",
-        id = "Certificaciones"
+        spacing = "6",
+        id = "certificaciones"
 )

@@ -12,7 +12,7 @@ def aportes() -> rx.Component:
                 rx.link(
                     rx.heading(
                         "Wpinger en Powershell",
-                        size = "2",
+                        size = rx.breakpoints(initial = "1", sm = "1", lg = "2"),
                         class_name = "titulo2"
                     ),
                     rx.image(
@@ -26,7 +26,7 @@ def aportes() -> rx.Component:
                 rx.link(
                     rx.heading(
                         "Pinger en Bash",
-                        size = "2",
+                        size = rx.breakpoints(initial = "1", sm = "1", lg = "2"),
                         class_name = "titulo2"
                     ),
                     rx.image(
@@ -44,7 +44,7 @@ def aportes() -> rx.Component:
                 rx.link(
                     rx.heading(
                         "TryHackMe Profile",
-                        size = "3",
+                        size = rx.breakpoints(initial = "1", sm = "2", lg = "3"),
                         class_name = "titulo2"
                     ),
                     rx.text(
@@ -151,7 +151,8 @@ def aportes() -> rx.Component:
                     ),
                     href = "https://github.com/Metahack10/hack_statusbar",
                     is_external = True,
-                    class_name = "row down2"
+                    class_name = "row down2",
+                    flex = rx.breakpoints(initial = "0.2", sm = "0.3", lg = "0.8")
                 ),
                 class_name = "col2",
                 width = "100%"
@@ -159,23 +160,27 @@ def aportes() -> rx.Component:
             rx.link(
                 rx.heading(
                     "POC WinRar CVE-2323-38831",
-                    size = "6",
+                    size = rx.breakpoints(initial = "2", sm = "4", lg = "6"),
                     class_name = "titulo"
                 ),
                 rx.image(
                     src = "logros/poc.png",
-                    class_name = "img_poc"
+                    class_name = "img_poc",
+                    height = rx.breakpoints(initial = "40%", sm = "50%", lg = "100%"),
+                    width = rx.breakpoints(initial = "40%", sm = "50%", lg = "100%")
                 ),   
                 href = "https://www.youtube.com/watch?v=LFzNChhzqns&t=6s",
                 class_name = "row col3",
                 width = "100%",
+                flex = rx.breakpoints(initial = "1.3", sm = "1.7", lg = "2.3"),
                 is_external = True
             ),
             class_name = "container",
-            height= "478px",
+            height= rx.breakpoints(initial = "150px", sm = "300px", lg = "478px"),
             width = "100%"
         ),
         width = "100%",
         align_items = "start",
-        id = "Aportes"
+        spacing = "6",
+        id = "Aportes",
     )
